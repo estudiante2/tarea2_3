@@ -11,24 +11,28 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
-Button bguardar;
+public class MainActivity extends AppCompatActivity
+{
+    Button bguardar;
     EditText descripcion;
     Button btnCamara;
     ImageView imgView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnCamara = findViewById(R.id.btnCamara);
         bguardar = findViewById(R.id.bguardar);
-       descripcion = (EditText) findViewById(R.id.txtdescripcion);
+        descripcion = (EditText) findViewById(R.id.txtdescripcion);
         imgView = findViewById(R.id.imageView);
 
-        btnCamara.setOnClickListener(new View.OnClickListener() {
+        btnCamara.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 abrirCamara();
             }
         });
